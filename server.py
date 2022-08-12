@@ -14,7 +14,7 @@ def create_socket():
         global port
         global s
         host="54.243.129.215"
-        port=8000
+        port=80
         s=socket.socket()   #socket crteation
     except socket.error as msg:
         print(str(msg))
