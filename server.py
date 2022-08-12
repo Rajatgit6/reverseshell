@@ -13,8 +13,8 @@ def create_socket():
         global host
         global port
         global s
-        host="54.243.129.215"
-        port=80
+        host=socket.gethostname()
+        port=8000
         s=socket.socket()   #socket crteation
     except socket.error as msg:
         print(str(msg))
